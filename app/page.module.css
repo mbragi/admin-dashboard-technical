@@ -94,7 +94,8 @@ margin-bottom: 7px;
 }
 .Bottom{
   object-fit: cover;
-  width: 95%;
+  width: 100%;
+  margin-top: 6%;
 }
 .summary_card_upper_bottom h3, .summary_card_lower_bottom h3 {
   color: var(--black-60, #45464E);
@@ -230,13 +231,13 @@ line-height: normal;
 
 /* Tablet and Smaller Desktop */
 @media (max-width: 800px) {
-  .mobile_first {
+  /* .mobile_first {
     order: 1;
   }
 
   .mobile_second {
     order: 2;
-  }
+  } */
   .summary_card_container{
     width: 95% ;
     align-items: center;

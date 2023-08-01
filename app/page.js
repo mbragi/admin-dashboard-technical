@@ -205,18 +205,88 @@ export default function Home() {
           </Row>
           <Row className={styles.summary_card_container} gutter={[20,15]} align={'middle'}>
             <Col span={24} lg={14} order={1} className={styles.mobile_second}>
-              <Row style={{width: '95%'}}>
+              <Row style={{width: '100%'}} justify={'space-between'}>
                 <Col span={24} lg={10}>
-                  <div>
-
-                  </div>
+                  <Image
+                    src='/assets/barChart.png'
+                    alt='barChart'
+                    width={80}
+                    height={100}
+                    style={{objectFit: 'cover',width: '100%',height:'100%'}}
+                    />
                 </Col>
                 <Col span={24} lg={10}>
-
+                <div className={styles.summary_card} style={{background:'#5570F1', marginTop:'15px'}}>
+                  {/* card icon and dropdown icon division  */}
+                    <div className={styles.summary_card_top}>
+                      <div className={styles.summary_card_top_start_user}>
+                        {/* card icon  */}
+                        <Image
+                        src='/assets/icons/folder.svg'
+                        alt='cardicon'
+                        width={20}
+                        height={20}
+                        />
+                      </div>
+                      <div className={styles.summary_card_top_end}>
+                      
+                      </div>
+                    </div>
+                  {/* Card details section */}
+                    <div className={styles.summary_card_bottom}>
+                      <div className={styles.summary_card_upper_bottom}>
+                        <p>Abandoned Cart</p>
+                        <h3>20%{' '} <span>+15.80%</span></h3>
+                      </div>
+                    
+                      <div className={styles.summary_card_lower_bottom}>
+                        <p>Customer</p>
+                        <h3>30</h3>
+                      </div>
+                    </div>
+                </div>
+                <div className={styles.summary_card} style={{margin:'20px auto'}}>
+                  {/* card icon and dropdown icon division  */}
+                    <div className={styles.summary_card_top}>
+                      <div className={styles.summary_card_top_start_user}>
+                        {/* card icon  */}
+                        <Image
+                        src='/assets/icons/Shoppingcart.svg'
+                        alt='cardicon'
+                        width={20}
+                        height={20}
+                        />
+                      </div>
+                      <div className={styles.summary_card_top_end}>
+                      <p>This year 
+                        <span>
+                          <Image
+                          src="/assets/icons/arrowdown.svg"
+                            alt="arrow"
+                          width={16}
+                          height={16}
+                        />
+                      </span>
+                      </p>
+                      </div>
+                    </div>
+                  {/* Card details section */}
+                    <div className={styles.summary_card_bottom}>
+                      <div className={styles.summary_card_upper_bottom}>
+                        <p style={{color: "#CC5F5F"}}>Abandoned Cart</p>
+                        <h3>20%{' '} <span>+15.80%</span></h3>
+                      </div>
+                    
+                      <div className={styles.summary_card_lower_bottom}>
+                        <p>Customer</p>
+                        <h3>30</h3>
+                      </div>
+                    </div>
+                </div>
                 </Col>
               </Row>
               {/* N.B: this is not an optimal way to display a chart as library like chartjs exist for such purpose */}
-              <Row className={styles.Bottom} align={'middle'}>
+              <Row className={styles.Bottom} align={'middle'} justify={'end'}>
                   {/* using the image instead due to time constraint  */}
                   <Image
                   src='/assets/bottom.png'
