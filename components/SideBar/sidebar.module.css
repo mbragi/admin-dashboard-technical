@@ -1,6 +1,5 @@
 .main_container_expanded,.main_container_collapsed{
  width: 296px;
- min-height: 999px;
 background-color: #fff;
 padding: 18px 30px;
 margin: 0 auto;
@@ -8,12 +7,13 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
+gap: 100px;
+height: 100%;
 }
 .main_container_collapsed{
  width: 88px;
 padding: 18px 0px;
-min-height: 700px;
-
+overflow: auto;
 }
 .upper_container{
  display: flex;
@@ -36,6 +36,7 @@ text-align: center;
  display: flex;
  justify-content: center;
  align-items: center;
+ border-radius: 8px;
 }
 
 .mobile_nav_gift{
@@ -59,7 +60,7 @@ text-align: center;
  display: flex;
 align-items: center;
 }
-.nav_list , .lower_container ul{
+.nav_list , .lower_container ul,.lower_container {
   list-style: none;
  display: flex;
  flex-direction: column;
@@ -67,6 +68,9 @@ align-items: center;
  align-items: center;
  width: 100%;
  gap: 15px
+}
+.lower_container ul{
+ margin-bottom: 15px;
 }
 
 .nav_item ,.nav_logout{
@@ -102,7 +106,7 @@ line-height: normal;
 align-items: center;
 }
 .nav_item a span, .active a span{
- background: #be9462;
+ background: #FFCC91;
 width: 24px;
 padding: 4px 8px 5px 8px;
 border-radius: 500px;

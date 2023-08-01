@@ -1,0 +1,299 @@
+.contacts_list,.chat_card_container{
+ background: #fff;
+ width: 100%;
+ /* height: 70vh; */
+ border-radius: 12px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ padding-bottom: 10px;
+}
+.contacts_list ,.chat_card_container{
+ gap: 20px;
+}
+.contacts_list_container,.list_container{
+ width: 100%;
+ overflow-y: scroll;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ height: 70vh;
+}
+.chat_container{
+ width: calc(100% - 40px);
+ margin: 0 auto;
+ display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ padding-bottom: 20px;
+}
+.search_container, .text_card_container, .contacts_list_header,.my_card_container{
+ width: calc(100% - 40px);
+ margin: 0 auto;
+ height: 45px;
+ padding: 8px 16px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.my_card_container{
+ align-items: flex-end;
+ flex-direction: column;
+ height: auto;
+}
+.text_card_container{
+ align-items: flex-start;
+ flex-direction: column;
+ height: auto;
+
+}
+/* .text_card_container */
+.search_container input{
+ width: 90%;
+ border: none;
+ outline: none;
+}
+.search_container{
+ border: 1px solid var(--black-1);
+ border-radius: 12px;
+}
+.contacts_list_header{
+ padding: 0;
+ height: auto;
+}
+.contacts_list_header h3{
+font-weight: 500;
+font-size: 20px;
+color: var(--black-90);
+}
+.contacts_list_header h3:last-of-type {
+ color: var(--black-20);
+}
+.contacts_list_header_container,.chat_card_header_details{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ gap: 15px;
+ padding: 22px 0px;
+}
+.chat_card_header_details{
+ padding: 0px 22px 0px 0px;
+ gap: 10px;
+}
+.is_active{
+ border-right: 4px solid #5570F1;
+ background: #F7F7FC;
+}
+.contact_card, .chat_card_header{
+ border-bottom: 1px solid #F1F3F9;
+}
+.contact_card, .is_active, .chat_card_header{
+ width: 100%;
+ height: max-content;
+ display: flex;
+ padding: 12px 24px;
+ cursor: pointer;
+}
+.contact_card_avatar{
+ width: 42px;
+ height: 42px;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+.chat_card_header_avatar{
+ width: 60px;
+ height: 60px;
+}
+.card_details_upper{
+ display: flex;
+ justify-content: space-between;
+}
+.contact_card_details{
+ width: calc(100% - 14px);
+ margin-left: 14px;
+}
+.contact_card_details p, .chat_card_header_details_top h3{
+ color: var(--black-60);
+ font-family: Inter;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+}
+
+.contact_card_details span, .card_header_links span{
+ display: grid;
+ place-items: center;
+ border-radius: 8px;
+ background:  #FEF5EA;
+ padding: 2px 4px;
+}
+.chat_card_header{
+ padding: 16px 21px 15px 22px;
+ height: 100px
+}
+
+.chat_card_header_details_top,.chat_card_header_details_bottom{
+ display: flex;
+ justify-content: space-between ;
+ width: calc(100% - 14px);
+ margin-left: 14px;
+ align-items: center;
+}
+
+.chat_card_status, .additional_info, .card_header_links{
+ display: flex;
+ justify-content: flex-start;
+ width: max-content;
+ gap: 5px;
+}
+.additional_info, .card_header_links{
+ justify-content: flex-end;
+}
+.additional_info p{
+ color: var(--black-20);
+ font-family: Inter;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+
+.card_header_links p{
+ color:  #5570F1;
+text-align: right;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.chat_card_status p, .product_card_details p{
+ color: var(--black-30, #8B8D97);
+text-align: right;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.text_card,.my_card ,.product_card{
+ width: 70%;
+ padding: 16px;
+}
+
+.text_card p,.my_card p{
+ color:  #FFF;
+ font-family: Inter;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 19px
+}
+.text_card{
+ background-color: var(--blue-100);
+ border-radius: 16px 16px 16px 0px;
+}
+.my_card p{
+ color:  #1C1D22
+}
+.my_card{
+ border-radius: 16px 16px 0px 16px;
+background:  #FFEAD1;
+
+}
+.show{
+background:  #FFEAD1;
+}
+.productName, .productPrice{
+ color: var(--black-60);
+ font-family: Inter;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: normal;
+}
+.hide{
+ display: none;
+}
+.product_card{
+ display: flex;
+ padding: 0;
+}
+.product_details{
+ width: cal(100% - 5px);
+ margin-left: 5px;
+ gap: 5px;
+ display: flex;
+ flex-direction: column;
+}
+.product_details_inner{
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+ gap: 25px;
+ align-items: center;
+}
+.productPrice{
+ color: var(--black-80, #33343A);
+ font-weight: 500;
+}
+.productAvail{
+ color: var(--black-20, #A6A8B1);
+ font-family: Inter;
+ font-size: 12px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: normal;
+}
+.productAvail span {
+ color: var(--blue-100);
+}
+
+.Day{
+ width: 100%;
+ display: grid;
+ place-items: center;
+}
+.Day span{
+ border-radius: 8px;
+background: var(--main-background);
+padding: 8px 12px;
+display: flex;
+min-width: max-content;
+}
+.type_a_message{
+height: 41px;
+width: 90%;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+border-radius: 8px;
+border: 1px solid var(--grey, #E1E2E9);
+}
+.type_a_message input{
+ /* position: fixed; */
+ width: 70%;
+ border: none;
+ outline: none;
+ padding: 4px;
+}
+.span{
+ background:  #FFEAD1;
+ padding: 4px;
+ display: flex;
+}
+
+.send_button{
+ padding: 4px 8px;
+ display: flex;
+ justify-content: space-between;
+ color: #1C1D22;
+ border: none;
+ border-radius: 6px;
+background: var(--secondary-30, #FFF2E2);
+min-width: 80px;
+}
