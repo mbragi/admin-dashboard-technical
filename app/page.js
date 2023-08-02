@@ -232,11 +232,11 @@ export default function Home() {
                     src="/assets/barChart.png"
                     alt="barChart"
                     width={80}
-                    height={150}
+                    height={100}
                     style={{
-                      objectFit: "contain",
+                      objectFit: "fill",
                       width: "95%",
-                      height: "115%",
+                      height: "95%",
                     }}
                   />
                 </Col>

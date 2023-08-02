@@ -93,9 +93,10 @@ line-height: normal;
 margin-bottom: 7px;
 }
 .Bottom{
-  object-fit: cover;
-  width: 100%;
-  margin-top: 6%;
+  object-fit: fill;
+  width: 95%;
+  margin-top: 5%;
+  margin-right: 5%;
 }
 .summary_card_upper_bottom h3, .summary_card_lower_bottom h3 {
   color: var(--black-60, #45464E);
