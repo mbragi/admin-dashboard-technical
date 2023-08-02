@@ -1,4 +1,4 @@
-import styles from '@/components/chat/Chat.module.css'
+import styles from '../../components/chat/Chat.module.css'
 import Image from 'next/image'
 export default function ContactCard({data}) {
   return (

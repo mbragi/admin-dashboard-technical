@@ -10,7 +10,7 @@ import {
  useParams,
  useRouter,
 } from "next/navigation"
-import { contactListData } from '@/utils/mockdata';
+import { contactListData } from '../utils/mockdata';
 import ProductCard from './ChatCards/ProductCard';
 import OwnCard from './ChatCards/OwnCard';
 import ContactCard from './ChatCards/ContactCard';

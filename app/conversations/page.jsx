@@ -4,7 +4,7 @@ import { Breadcrumb } from 'antd';
 import React from 'react';
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import Chat from '@/components/chat/Chat'
+import Chat from '../../components/chat/Chat'
 import styles from './page.module.css'
 import SideBar from '../../components/SideBar/SideBar';
 // import {ReactComponent as HomeIcon} from '../../public/assets/icons/Home.svg'

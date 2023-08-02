@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import  styles from './page.module.css'
-import  reuse from '@/app/conversations/page.module.css'
+import  reuse from '../app/conversations/page.module.css'
 import {Col, Row, Breadcrumb} from  'antd'
 import { usePathname } from 'next/navigation'
 import {  Orders  } from '../utils/orderData'

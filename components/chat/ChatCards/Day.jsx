@@ -1,4 +1,4 @@
-import styles from '@/components/chat/Chat.module.css'
+import styles from '../../components/chat/Chat.module.css'
 function Day({data}) {
   return (
    <div className={styles.text_card_container}>
